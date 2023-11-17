@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "esbuild": "^0.19.5",
     "nexe": "^4.0.0-rc.2"
   }
 }
