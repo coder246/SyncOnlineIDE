@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild index.js  --outfile=build.js --bundle --minify --platform=node && nexe build.js -t windows-x64-12.5.0 -o synconlineide.exe",
+    "build": "esbuild index.js  --outfile=build.js --bundle --platform=node && nexe build.js -t windows-x64-12.5.0 -o synconlineide.exe",
     "start": "node index.js"
   },
   "keywords": [],
