@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild index.js  --outfile=build.js --bundle --platform=node && nexe build.js -t windows-x64-12.5.0 -o synconlineide.exe",
+    "build": "rollup index.js --format cjs --file synconlineide.js && pkg -t node16-win-x64 synconlineide.js",
     "start": "node index.js"
   },
   "keywords": [],
@@ -14,6 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "esbuild": "^0.19.5",
-    "nexe": "^4.0.0-rc.2"
+    "nexe": "^4.0.0-rc.2",
+    "node-fetch": "^2.7.0",
+    "pkg": "^5.8.1",
+    "rollup": "^4.4.1"
   }
 }
