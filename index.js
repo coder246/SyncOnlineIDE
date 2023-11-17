@@ -20,7 +20,9 @@ async function main() {
 
     let oldConsoleError = console.error;
     console.error = function(string) {
-
+        if(string.startsWith("(node:")){
+            return;
+        }
         oldConsoleError(string);
     };
     //if file does not exist, exit
@@ -60,14 +62,11 @@ async function main() {
     }
 
     let localPath = configJSON.localPath;
-    console.log("CHECKING DONE")
 
 
     if(localPath===""||localPath==null){
         localPath = "./";
     }
-
-    console.log("CHECKING CONFIGURATION")
 
     //check if localPath exists
     if (!fs.existsSync(localPath)) {
@@ -75,7 +74,6 @@ async function main() {
         process.exit(1);
     }
 
-    console.log("SETTING UP SYNC");
 
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
