@@ -17,17 +17,23 @@ The Online IDE Sync Script is designed to streamline the process of synchronizin
 
 ## Installation
 
+1. Download SyncOnlineIDE.exe from the latest release. (preferred)
+
+or:
+
 1. Clone the repository or download the script file.
 2. Make sure you have Node.js installed.
 3. Install dependencies by running: `npm install` or `yarn install`
 
 ## Usage
 
+(preferred)
+
 Download the latest release and run the .exe-file in your local directory containing the Java files you want to upload to Online-IDE.de.
 
 Don't forget to configure the credentials before running it. See [Configuration](#configuration) for more information.
 
-or
+or:
 
 Run the script using the command:
 
