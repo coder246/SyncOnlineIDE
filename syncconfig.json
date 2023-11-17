@@ -1,0 +1,7 @@
+{
+  "user": "{USERNAME}",
+  "password": "{PASSWORD}",
+  "workspace": "{ONLINE_IDE_WORKSPACE}",
+  "path": "{REMOTE_PATH LEER LASSEN WENN ROOT}",
+  "localPath": "{LOCAL_PATH LEER LASSEN FÜR AKTUELLES VERZEICHNIS}"
+}
