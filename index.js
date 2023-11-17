@@ -54,8 +54,9 @@ async function main() {
         console.log("Attribute localPath not found in syncconfig.json - using default value ./");
     }
 
-    let localPath = configJSON.localPath??"./";
-    if(localPath===""){
+    let localPath = configJSON.localPath;
+
+    if(localPath===""||localPath==null){
         localPath = "./";
     }
 
